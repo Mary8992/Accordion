@@ -43,9 +43,14 @@ margin: 10px 20px;
     font-size: 1.5em;
 }
 
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
 .accordion .contentBx .content {
     position: relative;
     background: #fff;
+    line-height: 1.5em;
     height: 0;
     overflow: hidden;
     transition: 0.5s;
@@ -54,4 +59,9 @@ margin: 10px 20px;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+    height: 150px;
+    padding: 10px;
 }
